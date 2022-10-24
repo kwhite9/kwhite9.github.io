@@ -1,0 +1,95 @@
+<html>
+<!-- Kenna White, 9/29/22, Order Form -->
+<title>orderform</title>
+<form>
+<Head> 
+<style>
+ h2
+ {
+ color: #6D27AB;
+ }
+body {
+color: #6D27AB;
+ background-image: url('icecream1.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size:99.5% 100%;
+
+font-family: jazz LET, fantasy;
+}
+ </style>
+</Head>
+<H1> Ice Cream Order Form </H1>
+
+
+<H2>Customer Information</H2>
+<body>
+<table border=2>
+<tr><td>First Name</td><td><input type="text"></td></tr>
+<tr><td>Last Name</td><td><input type="text"></td></tr>
+<tr><td>Phone Number</td><td><input type="text"></td></tr>
+<tr><td>Street Address</td><td><input type="text"></td></tr>
+</table>
+</body>
+<H2>Flavor</H2>
+<body>
+<input type="radio" id="vanilla" name="flavoroption" value="vanilla">
+<label for="vanilla">Vanilla</label><br>
+<input type="radio" id="chocolate" name="flavoroption" value="chocolate">
+<label for="chocolate">Chocolate</label><br>
+<input type="radio" id="swirl" name="flavoroption" value="swirl">
+<label for="swirl">Swirl</label><br>
+<input type="radio" id="strawberry" name="flavoroption" value="strawberry">
+<label for="strawberry">Strawberry</label><br>
+<input type="radio" id="mintcc" name="flavoroption" value="mintcc">
+<label for="mintcc">Mint Chocolate Chip</label><br>
+</body>
+
+<H2>Cone Type</H2>
+<input type="radio" id="wafflecone" name="coneoption" value="wafflecone">
+<label for="wafflecone">Waffle Cone</label><br>
+<input type="radio" id="sugarcone" name="coneoption" value="sugarcone">
+<label for="sugarcone">Sugar Cone</label><br>
+<input type="radio" id="cup" name="coneoption" value="cup">
+<label for="cup">Cup</label><br>
+
+<H2>Size</H2>
+<label for="size">Select a size:</label>
+
+<select name="size" id="size">
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+  <option value="gallon">Gallon</option>
+</select>
+
+<H2>Toppings</H2>
+<input type="checkbox" id="toppings1" name="toppings1" value="sprinkles">
+<label for="sprinkles">Sprinkles</label><br>
+<input type="checkbox" id="toppings2" name="toppings2" value="oreos">
+<label for="oreos">Oreos</label><br>
+<input type="checkbox" id="toppings3" name="toppings3" value="mm">
+<label for="mm">M&M's</label><br>
+<input type="checkbox" id="toppings4" name="toppings4" value="whippedcream">
+<label for="whippedcream">Whipped Cream</label><br>
+<input type="checkbox" id="toppings5" name="toppings5" value="fudge">
+<label for="fudge">Hot Fudge</label><br>
+<input type="checkbox" id="toppings6" name="toppings6" value="carmel">
+<label for="carmel">Carmel</label><br>
+
+<H2>Delivery</H2>
+<input type="radio" id="pickup" name="deliveryoption" value="pickup">
+<label for="pickup">Pickup</label><br>
+<input type="radio" id="delivery" name="deliveryoption" value="delivery">
+<label for="delivery">Delivery</label><br>
+<input type="radio" id="eatin" name="deliveryoption" value="eatin">
+<label for="eatin">Eat-In</label><br> <br>
+<label for="delivinstructions">Delivery Instructions:</label><br>
+<textarea placeholder="Enter Delivery Instructions Here" id="delivinstructions" name="delivinstructions" rows="4" cols="40">
+</textarea>
+<br><br>
+<input type="submit" value="Submit Form">
+<input type="reset" value="Clear">
+</form>
+
+</html>
