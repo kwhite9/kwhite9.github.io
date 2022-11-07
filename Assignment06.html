@@ -1,0 +1,52 @@
+<html>
+ <form name=assignment06form>
+  <head>
+    <title>Assignment06</title>
+    <script>
+      function glue ()
+      {
+	document.assignment06form.three.value = 
+	  "The "
+        + document.assignment06form.one.value
+	+ " "
+	+ document.assignment06form.two.value;
+      }
+      function favorite()
+      {
+         alert("This is my favorite!")
+      }
+      function change()
+      {
+	document.querySelector("#change").innerHTML =
+ 	"Congrats on your new band name!"
+      }
+    </script>
+  </head>
+
+<h1> Band Name Generator </h1>
+<table>
+<tr><td>Favorite Book Genre: </td><td><input type="text" id="one" name="one" onchange="change();"></td></tr>
+<tr><td>Last Thing You Ate:</td><td><input type="text" name="two"
+onchange="glue();"></td></tr>
+<tr><td>New Band Name:</td><td><input type="text" name="three"></td></tr>
+</table>
+<br>
+
+
+Select The New Band Names That You Like:
+<br>
+<input type="checkbox" id="box1" name="box1" value="box1" onclick="favorite();"> 
+<label for="box1">The Fantasy Pretzels</label><br>
+<input type="checkbox" id="box2" name="box2" value="box2"> 
+<label for="box2">The Horror Muffin</label><br>
+<input type="checkbox" id="box3" name="box3" value="box3"> 
+<label for="box3">The Dystopia Salad </label><br>
+<br>
+
+<div id=change> 
+
+</div>
+
+<input type="reset" value="Clear">
+ <form>
+</html>
