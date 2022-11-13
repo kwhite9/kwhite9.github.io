@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <form name=assignment07>
+    <title>Assignment07</title>
+    <script>
+	function add()
+	  {
+	    document.querySelector("#coutput").value
+	    = parseFloat(document.querySelector("#cinputi").value)
+	    + parseFloat(document.querySelector("#cinputii").value);
+	  }
+	function subtract()
+	  {
+	    document.querySelector("#coutput").value
+	    = parseFloat(document.querySelector("#cinputi").value)
+	    - parseFloat(document.querySelector("#cinputii").value);
+	  }
+	function multiply()
+	  {
+	    document.querySelector("#coutput").value
+	    = parseFloat(document.querySelector("#cinputi").value)
+	    * parseFloat(document.querySelector("#cinputii").value);
+	  }
+	function divide()
+	  {
+	    document.querySelector("#coutput").value
+	    = parseFloat(document.querySelector("#cinputi").value)
+	    / parseFloat(document.querySelector("#cinputii").value);
+	  }
+
+
+	function summarize()
+	  {
+	    var sum=0;
+ 	    var S = parseInt(document.querySelector("#sstart").value);
+	    var E = parseInt(document.querySelector("#send").value);
+ 	    for (i=S; i<=E; i++) {
+ 	    sum += i;
+	     }
+	   document.querySelector("#sum").innerHTML =
+	"Your sum is: "+sum;
+		 }
+	
+
+	function makeRed()
+ 	  {
+	    document.querySelector('body').style.backgroundColor="red";
+	  }
+	function makeBlue()
+ 	  {
+	    document.querySelector('body').style.backgroundColor="blue";
+	  }
+	function makePurple()
+ 	  {
+	    document.querySelector('body').style.backgroundColor="purple";
+	  }
+	function makeWhite()
+ 	  {
+	    document.querySelector('body').style.backgroundColor="white";
+	  }
+ </script>
+  </head>
+
+
+  <body>
+    <h2>Calculator</h2>
+	<input type="text" name="cinputi" id="cinputi"> 
+	 <button type="button" value="add" onclick="add();">+</button>
+	 <button type="button" value="subtract" onclick="subtract();">-</button>
+	 <button type="button" value="multiply" onclick="multiply();">*</button>
+	 <button type="button" value="divide" onclick="divide();">/</button>
+	<input type="text" name="cinputii" id="cinputii"> = 
+	<input type="text" name="coutput" id="coutput">
+
+    <h2>Summation</h2>
+	Summation start: <input type="text" name="sstart" id="sstart"> <br>
+	Summation end: <input type="text" name="send" id="send"> <br>
+	<button type="button" value="summarize" onclick="summarize();">Summarize!</button> <br>
+	<div id=sum> Your sum is: </div>
+
+  <h2>Background Color</h2>
+    <button type="button" value="red" onclick="makeRed();">red</button>
+    <button type="button" value="blue" onclick="makeBlue();">blue</button>
+    <button type="button" value="purple" onclick="makePurple();">purple</button>
+    <button type="button" value="white" onclick="makeWhite();">white</button>
+    <br><br>
+
+
+  <input type="reset" value="Clear">
+
+
+    </form>
+  </body>
+<html>
