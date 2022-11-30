@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>MMwks</title>
+    <script>
+      function watermm()
+	{
+	if(document.querySelector("#water").value=="18")
+	  {
+	  alert("good job! Try the next one.");
+	  }
+	else
+	  {
+	  alert("not quite! try again.");
+	  }
+	}
+      function vinegarmm()
+	{
+	if(document.querySelector("#vinegar").value=="60")
+	  {
+	  alert("You're doing terrific! One more!");
+	  }
+	else
+	  {
+	  alert("not quite! try again.");
+	  }
+	}
+      function quartzmm()
+	{
+	if(document.querySelector("#quartz").value=="60")
+	  {
+	  alert("Wow!!! Fantastic job. As you can tell, doing molar mass by hand can be really tedious, especially with a lot of large compounds. But what if there was a calculator that could do it for you?");
+	  document.querySelector("#calc").innerHTML=
+	  "y";
+	  }
+	else
+	  {
+	  alert("not quite! try again.");
+	  }
+	}
+    </script>
+  </head>
+  <body>
+    <form>
+    <h1>Introduction to Molar Mass</h1>
+Welcome! <br><br>
+Today we will be learning about <b>molar mass!</b> <br>
+Molar mass is an important concept that chemists and chemistry students use every day. <br>
+When looking at a reaction, you need to know how many molecules (roughly) of each reactant you need, so that you know how much of each material you need to add to your reaction. <br>
+However, you can't count out each molecule! <br>
+We need to relate how many molecules you have to an easier to measure quantity. The easiest way to do this is with mass! <br>
+The way to relate mass and amount is through something called <b>molar mass</b>. <br><br> 
+
+<h2>How Do I Find Molar Mass?</h2>
+Molar mass is different for every compound, and must be calculated from your molecule's formula. <br>
+To do this, find the mass of all of the atoms in one molecule of your compound, and add them all together. <br>
+For example, ethane, C2H6, is composed of 2 carbons and 6 hydrogens. Carbon's molecular mass is 12 amu (atomic mass units), and hydrogen's molecular mass is 1 amu, <br>
+so ethanes molar mass would be (2x12)+(6x1)= 30 amu/molecule! <br><br>
+
+<h2>But Wait!</h2>
+One last thing. The way we have this right now is actually the compounds <b><i>molecular</i></b> mass, not its <b><i>molar</b></i> mass. <br>
+The scales in lab aren't nearly precise enough to measure atomic mass units (1 atomic mass unit = 1 proton or neutron), <br>
+and if I'm weighing out grams of my compound, the amount of molecules is going to be ridiculously large. <br>
+To solve this problem, the last thing we need to learn about is the concept of <b>moles.</b><br><br>
+
+<h2>Moles</h2>
+What is a mole?<br>
+A <b>mole</b> is an amount, like a dozen. However, instead of 12, a mole is 6.022e23. <br>
+Moles can confuse students at first, but it works the exact same way a dozen does. <br>
+If I were to say "I have a dozen donuts", it means, "I have twelve donuts". <br>
+If I were to say "I have a mole of donuts", it means, "I have 622,000,000,000,000,000,000,000 donuts." <br>
+Moles are nice because they make the numbers much easier to manage ("1 mole" instead of "6.22e23 molecules") <br>
+But the mole is also a very specific number that relate atomic mass units to grams. <br>
+Because of this, the amount of atomic mass units per molecule of a substance is actually <b>equal</b> to the amount of grams per mole! <br><br>
+
+So, back to our earlier example, ethane's <b>molecular</b> mass is 30 atomic mass units per molecule, and it's <b>molar</b> mass is 30 grams per mole! <br><br>
+
+<h2>Now It's Your Turn!</h2>
+Now that we've done an example together, it's your turn to try a couple! <br>
+Use the periodic table provided below to help you. The molecular/molar mass of each element is listed directly below it. <br>
+<b><u>insert periodic table here!!!!!!!</b></u> <br> <br>
+What is the molar mass of water (H2O) to the nearest whole number? <input type="text" name="water" id="water"><input type=button value="check" onclick="watermm();"><br>
+What is the molar mass of acetic acid (C2H4O2) to the nearest whole number? <input type="text" name="vinegar" id="vinegar"><input type=button value="check" onclick="vinegarmm();"><br>
+What is the molar mass of quartz (SiO2) to the nearest whole number? <input type="text" name="quartz" id="quartz"><input type=button value="check" onclick="quartzmm();"><br><br>
+<div id="calc"> </div>
+
+    </form>
+  </body>
+</html>
