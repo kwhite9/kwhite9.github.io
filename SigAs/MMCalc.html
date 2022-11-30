@@ -1,237 +1,88 @@
 <html>
   <head>
-    <form>
-    <title>MMCalc</title>
-	<style>
-	  table
-	    {
-	      text-align: center
-	    }
-	</style>
-     <script>
-      function mass()
-       {
-	document.querySelector("#output").value
-	= 1.008*parseFloat(document.querySelector("#H").value)
-	+ 4.003*parseFloat(document.querySelector("#He").value)
-	+ 6.941*parseFloat(document.querySelector("#Li").value)
-	+9.012*parseFloat(document.querySelector("#Be").value)
-	+10.811*parseFloat(document.querySelector("#B").value)
-	+12.011*parseFloat(document.querySelector("#C").value)
-	+14.007*parseFloat(document.querySelector("#N").value)
-	+15.999*parseFloat(document.querySelector("#O").value)
-	+18.998*parseFloat(document.querySelector("#F").value)
-	+20.180*parseFloat(document.querySelector("#Ne").value)
-	+22.990*parseFloat(document.querySelector("#Na").value)
-	+24.305*parseFloat(document.querySelector("#Mg").value)
-	+26.982*parseFloat(document.querySelector("#Al").value)
-	+28.086*parseFloat(document.querySelector("#Si").value)
-	+30.974*parseFloat(document.querySelector("#P").value)
-	+32.066*parseFloat(document.querySelector("#S").value)
-	+35.453*parseFloat(document.querySelector("#Cl").value)
-	+39.948*parseFloat(document.querySelector("#Ar").value)
-	+39.098*parseFloat(document.querySelector("#K").value)
-	+40.078*parseFloat(document.querySelector("#Ca").value)
-	+44.956*parseFloat(document.querySelector("#Sc").value)
-	+47.867*parseFloat(document.querySelector("#Ti").value)
-	+50.942*parseFloat(document.querySelector("#V").value)
-	+51.996*parseFloat(document.querySelector("#Cr").value)
-	+54.948*parseFloat(document.querySelector("#Mn").value)
-	+55.845*parseFloat(document.querySelector("#Fe").value)
-	+58.933*parseFloat(document.querySelector("#Co").value)
-	+58.693*parseFloat(document.querySelector("#Ni").value)
-	+63.546*parseFloat(document.querySelector("#Cu").value)
-	+65.38*parseFloat(document.querySelector("#Zn").value)
-	+69.723*parseFloat(document.querySelector("#Ga").value)
-	+72.631*parseFloat(document.querySelector("#Ge").value)
-	+74.922*parseFloat(document.querySelector("#As").value)
-	+78.971*parseFloat(document.querySelector("#Se").value)
-	+79.904*parseFloat(document.querySelector("#Br").value)
-	+84.798*parseFloat(document.querySelector("#Kr").value)
-	+85.468*parseFloat(document.querySelector("#Rb").value)
-	+87.62*parseFloat(document.querySelector("#Sr").value)
-	+88.906*parseFloat(document.querySelector("#Y").value)
-	+91.224*parseFloat(document.querySelector("#Zr").value)
-	+92.906*parseFloat(document.querySelector("#Nb").value)
-	+95.95*parseFloat(document.querySelector("#Mo").value)
-	+98.907*parseFloat(document.querySelector("#Tc").value)
-	+101.07*parseFloat(document.querySelector("#Ru").value)
-	+102.906*parseFloat(document.querySelector("#Rh").value)
-	+106.42*parseFloat(document.querySelector("#Pd").value)
-	+107.868*parseFloat(document.querySelector("#Ag").value)
-	+112.414*parseFloat(document.querySelector("#Cd").value)
-	+114.818*parseFloat(document.querySelector("#In").value)
-	+118.711*parseFloat(document.querySelector("#Sn").value)
-	+121.760*parseFloat(document.querySelector("#Sb").value)
-	+127.6*parseFloat(document.querySelector("#Te").value)
-	+126.904*parseFloat(document.querySelector("#I").value)
-	+131.294*parseFloat(document.querySelector("#Xe").value)
-	+132.905*parseFloat(document.querySelector("#Cs").value)
-	+137.328*parseFloat(document.querySelector("#Ba").value)
-	+174.967*parseFloat(document.querySelector("#Lu").value)
-	+178.49*parseFloat(document.querySelector("#Hf").value)
-	+180.948*parseFloat(document.querySelector("#Ta").value)
-	+183.84*parseFloat(document.querySelector("#W").value)
-	+186.207*parseFloat(document.querySelector("#Re").value)
-	+190.23*parseFloat(document.querySelector("#Os").value)
-	+192.217*parseFloat(document.querySelector("#Ir").value)
-	+195.085*parseFloat(document.querySelector("#Pt").value)
-	+196.967*parseFloat(document.querySelector("#Au").value)
-	+200.592*parseFloat(document.querySelector("#Hg").value)
-	+204.383*parseFloat(document.querySelector("#Tl").value)
-	+207.2*parseFloat(document.querySelector("#Pb").value)
-	+208.980*parseFloat(document.querySelector("#Bi").value)
-	+208.982*parseFloat(document.querySelector("#Po").value)
-	+209.987*parseFloat(document.querySelector("#At").value)
-	+222.018*parseFloat(document.querySelector("#Rn").value)
-	+223.020*parseFloat(document.querySelector("#Fr").value)
-	+226.025*parseFloat(document.querySelector("#Ra").value)
-	+262*parseFloat(document.querySelector("#Lr").value)
-	+261*parseFloat(document.querySelector("#Rf").value)
-	+262*parseFloat(document.querySelector("#Db").value)
-	+266*parseFloat(document.querySelector("#Sg").value)
-	+264*parseFloat(document.querySelector("#Bh").value)
-	+269*parseFloat(document.querySelector("#Hs").value)
-	+268*parseFloat(document.querySelector("#Mt").value)
-	+269*parseFloat(document.querySelector("#Ds").value)
-	+272*parseFloat(document.querySelector("#Rg").value)
-	+277*parseFloat(document.querySelector("#Cn").value)
-	+4*parseFloat(document.querySelector("#Nh").value)
-	+289*parseFloat(document.querySelector("#Fl").value)
-	+294*parseFloat(document.querySelector("#Mc").value)
-	+298*parseFloat(document.querySelector("#Lv").value)
-	+301*parseFloat(document.querySelector("#Ts").value)
-	+302*parseFloat(document.querySelector("#Og").value)
-       }
-	</script>
-
-</head>
+    <title>MMwks</title>
+    <script>
+      function watermm()
+	{
+	if(document.querySelector("#water").value=="18")
+	  {
+	  alert("good job! Try the next one.");
+	  }
+	else
+	  {
+	  alert("not quite! try again.");
+	  }
+	}
+      function vinegarmm()
+	{
+	if(document.querySelector("#vinegar").value=="60")
+	  {
+	  alert("You're doing terrific! One more!");
+	  }
+	else
+	  {
+	  alert("not quite! try again.");
+	  }
+	}
+      function quartzmm()
+	{
+	if(document.querySelector("#quartz").value=="60")
+	  {
+	  alert("Wow!!! Fantastic job. As you can tell, doing molar mass by hand can be really tedious, especially with a lot of large compounds. But what if there was a calculator that could do it for you?");
+	  document.querySelector("#calc").innerHTML=
+	  "y";
+	  }
+	else
+	  {
+	  alert("not quite! try again.");
+	  }
+	}
+    </script>
+  </head>
   <body>
-    <h1>Molar Mass Calculator</h1>
-Welcome to the molar mass calculator! <br>
-To use this, just enter the number of each element you have in your compound in their selected spots, and hit mass! <br> <br>
+    <form>
+    <h1>Introduction to Molar Mass</h1>
+Welcome! <br><br>
+Today we will be learning about <b>molar mass!</b> <br>
+Molar mass is an important concept that chemists and chemistry students use every day. <br>
+When looking at a reaction, you need to know how many molecules (roughly) of each reactant you need, so that you know how much of each material you need to add to your reaction. <br>
+However, you can't count out each molecule! <br>
+We need to relate how many molecules you have to an easier to measure quantity. The easiest way to do this is with mass! <br>
+The way to relate mass and amount is through something called <b>molar mass</b>. <br><br> 
 
-<table>
+<h2>How Do I Find Molar Mass?</h2>
+Molar mass is different for every compound, and must be calculated from your molecule's formula. <br>
+To do this, find the mass of all of the atoms in one molecule of your compound, and add them all together. <br>
+For example, ethane, C2H6, is composed of 2 carbons and 6 hydrogens. Carbon's molecular mass is 12 amu (atomic mass units), and hydrogen's molecular mass is 1 amu, <br>
+so ethanes molar mass would be (2x12)+(6x1)= 30 amu/molecule! <br><br>
 
-<tr>
-<td>H<br><input type="text" name="H" id="H" size="1" value="0"></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td>He<br><input type="text" name="He" id="He" size="1" value="0"></td>
-</tr>
+<h2>But Wait!</h2>
+One last thing. The way we have this right now is actually the compounds <b><i>molecular</i></b> mass, not its <b><i>molar</b></i> mass. <br>
+The scales in lab aren't nearly precise enough to measure atomic mass units (1 atomic mass unit = 1 proton or neutron), <br>
+and if I'm weighing out grams of my compound, the amount of molecules is going to be ridiculously large. <br>
+To solve this problem, the last thing we need to learn about is the concept of <b>moles.</b><br><br>
 
-<tr>
-<td>Li<br><input type="text" name="Li" id="Li" size="1" value="0"></td>
-<td>Be<br><input type="text" name="Be" id="Be" size="1" value="0"></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td>B<br><input type="text" name="B" id="B" size="1" value="0"></td>
-<td>C<br><input type="text" name="C" id="C" size="1" value="0"></td>
-<td>N<br><input type="text" name="N" id="N" size="1" value="0"></td>
-<td>O<br><input type="text" name="O" id="O" size="1" value="0"></td>
-<td>F<br><input type="text" name="F" id="F" size="1" value="0"></td>
-<td>Ne<br><input type="text" name="Ne" id="Ne" size="1" value="0"></td>
-</tr>
+<h2>Moles</h2>
+What is a mole?<br>
+A <b>mole</b> is an amount, like a dozen. However, instead of 12, a mole is 6.022e23. <br>
+Moles can confuse students at first, but it works the exact same way a dozen does. <br>
+If I were to say "I have a dozen donuts", it means, "I have twelve donuts". <br>
+If I were to say "I have a mole of donuts", it means, "I have 622,000,000,000,000,000,000,000 donuts." <br>
+Moles are nice because they make the numbers much easier to manage ("1 mole" instead of "6.22e23 molecules") <br>
+But the mole is also a very specific number that relate atomic mass units to grams. <br>
+Because of this, the amount of atomic mass units per molecule of a substance is actually <b>equal</b> to the amount of grams per mole! <br><br>
 
-<tr>
-<td>Na<br><input type="text" name="Na" id="Na" size="1" value="0"></td>
-<td>Mg<br><input type="text" name="Mg" id="Mg" size="1" value="0"></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td>Al<br><input type="text" name="Al" id="Al" size="1" value="0"></td>
-<td>Si<br><input type="text" name="Si" id="Si" size="1" value="0"></td>
-<td>P<br><input type="text" name="P" id="P" size="1" value="0"></td>
-<td>S<br><input type="text" name="S" id="S" size="1" value="0"></td>
-<td>Cl<br><input type="text" name="Cl" id="Cl" size="1" value="0"></td>
-<td>Ar<br><input type="text" name="Ar" id="Ar" size="1" value="0"></td>
-</tr>
+So, back to our earlier example, ethane's <b>molecular</b> mass is 30 atomic mass units per molecule, and it's <b>molar</b> mass is 30 grams per mole! <br><br>
 
-<tr>
-<td>K<br><input type="text" name="K" id="K" size="1" value="0"></td>
-<td>Ca<br><input type="text" name="Ca" id="Ca" size="1" value="0"></td>
-<td>Sc<br><input type="text" name="Sc" id="Sc" size="1" value="0"></td>
-<td>Ti<br><input type="text" name="Ti" id="Ti" size="1" value="0"></td>
-<td>V<br><input type="text" name="V" id="V" size="1" value="0"></td>
-<td>Cr<br><input type="text" name="Cr" id="Cr" size="1" value="0"></td>
-<td>Mn<br><input type="text" name="Mn" id="Mn" size="1" value="0"></td>
-<td>Fe<br><input type="text" name="Fe" id="Fe" size="1" value="0"></td>
-<td>Co<br><input type="text" name="Co" id="Co" size="1" value="0"></td>
-<td>Ni<br><input type="text" name="Ni" id="Ni" size="1" value="0"></td>
-<td>Cu<br><input type="text" name="Cu" id="Cu" size="1" value="0"></td>
-<td>Zn<br><input type="text" name="Zn" id="Zn" size="1" value="0"></td>
-<td>Ga<br><input type="text" name="Ga" id="Ga" size="1" value="0"></td>
-<td>Ge<br><input type="text" name="Ge" id="Ge" size="1" value="0"></td>
-<td>As<br><input type="text" name="As" id="As" size="1" value="0"></td>
-<td>Se<br><input type="text" name="Se" id="Se" size="1" value="0"></td>
-<td>Br<br><input type="text" name="Br" id="Br" size="1" value="0"></td>
-<td>Kr<br><input type="text" name="Kr" id="Kr" size="1" value="0"></td>
-</tr>
+<h2>Now It's Your Turn!</h2>
+Now that we've done an example together, it's your turn to try a couple! <br>
+Use the periodic table provided below to help you. The molecular/molar mass of each element is listed directly below it. <br>
+<img src="periodictable.png" alt="periodic table"> <br> <br>
+What is the molar mass of water (H2O) to the nearest whole number? <input type="text" name="water" id="water"><input type=button value="check" onclick="watermm();"><br>
+What is the molar mass of acetic acid (C2H4O2) to the nearest whole number? <input type="text" name="vinegar" id="vinegar"><input type=button value="check" onclick="vinegarmm();"><br>
+What is the molar mass of quartz (SiO2) to the nearest whole number? <input type="text" name="quartz" id="quartz"><input type=button value="check" onclick="quartzmm();"><br><br>
+<div id="calc"> </div>
 
-<tr>
-<td>Rb<br><input type="text" name="Rb" id="Rb" size="1" value="0"></td>
-<td>Sr<br><input type="text" name="Sr" id="Sr" size="1" value="0"></td>
-<td>Y<br><input type="text" name="Y" id="Y" size="1" value="0"></td>
-<td>Zr<br><input type="text" name="Zr" id="Zr" size="1" value="0"></td>
-<td>Nb<br><input type="text" name="Nb" id="Nb" size="1" value="0"></td>
-<td>Mo<br><input type="text" name="Mo" id="Mo" size="1" value="0"></td>
-<td>Tc<br><input type="text" name="Tc" id="Tc" size="1" value="0"></td>
-<td>Ru<br><input type="text" name="Ru" id="Ru" size="1" value="0"></td>
-<td>Rh<br><input type="text" name="Rh" id="Rh" size="1" value="0"></td>
-<td>Pd<br><input type="text" name="Pd" id="Pd" size="1" value="0"></td>
-<td>Ag<br><input type="text" name="Ag" id="Ag" size="1" value="0"></td>
-<td>Cd<br><input type="text" name="Cd" id="Cd" size="1" value="0"></td>
-<td>In<br><input type="text" name="In" id="In" size="1" value="0"></td>
-<td>Sn<br><input type="text" name="Sn" id="Sn" size="1" value="0"></td>
-<td>Sb<br><input type="text" name="Sb" id="Sb" size="1" value="0"></td>
-<td>Te<br><input type="text" name="Te" id="Te" size="1" value="0"></td>
-<td>I<br><input type="text" name="I" id="I" size="1" value="0"></td>
-<td>Xe<br><input type="text" name="Xe" id="Xe" size="1" value="0"></td>
-</tr>
-
-<tr>
-<td>Cs<br><input type="text" name="Cs" id="Cs" size="1" value="0"></td>
-<td>Ba<br><input type="text" name="Ba" id="Ba" size="1" value="0"></td>
-<td>Lu<br><input type="text" name="Lu" id="Lu" size="1" value="0"></td>
-<td>Hf<br><input type="text" name="Hf" id="Hf" size="1" value="0"></td>
-<td>Ta<br><input type="text" name="Ta" id="Ta" size="1" value="0"></td>
-<td>W<br><input type="text" name="W" id="W" size="1" value="0"></td>
-<td>Re<br><input type="text" name="Re" id="Re" size="1" value="0"></td>
-<td>Os<br><input type="text" name="Os" id="Os" size="1" value="0"></td>
-<td>Ir<br><input type="text" name="Ir" id="Ir" size="1" value="0"></td>
-<td>Pt<br><input type="text" name="Pt" id="Pt" size="1" value="0"></td>
-<td>Au<br><input type="text" name="Au" id="Au" size="1" value="0"></td>
-<td>Hg<br><input type="text" name="Hg" id="Hg" size="1" value="0"></td>
-<td>Tl<br><input type="text" name="Tl" id="Tl" size="1" value="0"></td>
-<td>Pb<br><input type="text" name="Pb" id="Pb" size="1" value="0"></td>
-<td>Bi<br><input type="text" name="Bi" id="Bi" size="1" value="0"></td>
-<td>Po<br><input type="text" name="Po" id="Po" size="1" value="0"></td>
-<td>At<br><input type="text" name="At" id="At" size="1" value="0"></td>
-<td>Rn<br><input type="text" name="Rn" id="Rn" size="1" value="0"></td>
-</tr>
-
-<tr>
-<td>Fr<br><input type="text" name="Fr" id="Fr" size="1" value="0"></td>
-<td>Ra<br><input type="text" name="Ra" id="Ra" size="1" value="0"></td>
-<td>Lr<br><input type="text" name="Lr" id="Lr" size="1" value="0"></td>
-<td>Rf<br><input type="text" name="Rf" id="Rf" size="1" value="0"></td>
-<td>Db<br><input type="text" name="Db" id="Db" size="1" value="0"></td>
-<td>Sg<br><input type="text" name="Sg" id="Sg" size="1" value="0"></td>
-<td>Bh<br><input type="text" name="Bh" id="Bh" size="1" value="0"></td>
-<td>Hs<br><input type="text" name="Hs" id="Hs" size="1" value="0"></td>
-<td>Mt<br><input type="text" name="Mt" id="Mt" size="1" value="0"></td>
-<td>Ds<br><input type="text" name="Ds" id="Ds" size="1" value="0"></td>
-<td>Rg<br><input type="text" name="Rg" id="Rg" size="1" value="0"></td>
-<td>Cn<br><input type="text" name="Cn" id="Cn" size="1" value="0"></td>
-<td>Nh<br><input type="text" name="Nh" id="Nh" size="1" value="0"></td>
-<td>Fl<br><input type="text" name="Fl" id="Fl" size="1" value="0"></td>
-<td>Mc<br><input type="text" name="Mc" id="Mc" size="1" value="0"></td>
-<td>Lv<br><input type="text" name="Lv" id="Lv" size="1" value="0"></td>
-<td>Ts<br><input type="text" name="Ts" id="Ts" size="1" value="0"></td>
-<td>Og<br><input type="text" name="Og" id="Og" size="1" value="0"></td>
-</tr>
-</table>
-
-<br>
-<input type="reset" value="Clear"><button type="button" value="mass" onclick="mass();"> Mass! </button>
-<br><br>
-Your compound's molar mass is: <input type="text" name="output" id="output">
     </form>
   </body>
-<html>
+</html>
