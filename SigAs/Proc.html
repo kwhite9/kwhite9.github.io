@@ -1,0 +1,248 @@
+<html>
+ <form>
+  <head>
+    <title>ProcedureBuilder</title>
+<link href="https://fonts.cdnfonts.com/css/pencil-2" rel="stylesheet">
+                
+
+    <style>
+      body
+	{
+	background-image: url('Notebook.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:99.5% 100%;
+	text-align: center;
+	font-size: 21;
+	font-family: 'Pencil', sans-serif;
+                                                
+	}
+      table
+	{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+      img
+	{
+	max-width: 40%;
+	height: auto;
+	opacity: .9;
+	}
+      ol
+	{
+	display: table;
+	margin: 0 auto;
+	text-align: left;
+	}
+    </style>
+
+    <script>
+var presses = 0
+      function showcn()
+	{
+document.querySelector("#cn").style.display="block";
+	}
+	function hidecn()
+	{
+document.querySelector("#cn").style.display="none";
+	}
+      function massone()
+	{
+	document.querySelector("#componecmass").value
+	=parseFloat(document.querySelector("#componemols").value)
+	*parseFloat(document.querySelector("#componemm").value)
+	/1000;
+	}
+      function masstwo()
+	{
+	document.querySelector("#comptwocmass").value
+	=parseFloat(document.querySelector("#comptwomols").value)
+	*parseFloat(document.querySelector("#comptwomm").value)
+	/1000;
+	}
+      function massthree()
+	{
+	document.querySelector("#compthreecmass").value
+	=parseFloat(document.querySelector("#compthreemols").value)
+	*parseFloat(document.querySelector("#compthreemm").value)
+	/1000;
+	}
+      function massfour()
+	{
+	document.querySelector("#compfourcmass").value
+	=parseFloat(document.querySelector("#compfourmols").value)
+	*parseFloat(document.querySelector("#compfourmm").value)
+	/1000;
+	}
+      function massfive()
+	{
+	document.querySelector("#compfivecmass").value
+	=parseFloat(document.querySelector("#compfivemols").value)
+	*parseFloat(document.querySelector("#compfivemm").value)
+	/1000;
+	}
+
+
+      function addcomponent()
+	{
+	presses++;
+	var component = prompt("Which component would you like to add?");
+	var container = prompt("What would you like to add this component to?");
+	if (presses == 1) { 
+	document.querySelector("#sone").innerHTML = "add " + component + " to " + container}
+	if (presses == 2) { 
+	document.querySelector("#stwo").innerHTML = "add " + component + " to " + container}
+	if (presses == 3) { 
+	document.querySelector("#sthree").innerHTML = "add " + component + " to " + container}
+	if (presses == 4) { 
+	document.querySelector("#sfour").innerHTML = "add " + component + " to " + container}
+	if (presses == 5) { 
+	document.querySelector("#sfive").innerHTML = "add " + component + " to " + container}
+	if (presses == 6) { 
+	document.querySelector("#ssix").innerHTML = "add " + component + " to " + container}
+	}
+      function stirx()
+	{
+	presses++;
+	var stirtime = prompt("How long would you like to stir?");
+	if (presses == 1) { 
+	document.querySelector("#sone").innerHTML = "stir for " + stirtime}
+	if (presses == 2) { 
+	document.querySelector("#stwo").innerHTML = "stir for " + stirtime}
+	if (presses == 3) { 
+	document.querySelector("#sthree").innerHTML = "stir for " + stirtime}
+	if (presses == 4) { 
+	document.querySelector("#sfour").innerHTML = "stir for " + stirtime}
+	if (presses == 5) { 
+	document.querySelector("#sfive").innerHTML = "stir for " + stirtime}
+	if (presses == 6) { 
+	document.querySelector("#ssix").innerHTML = "stir for " + stirtime}
+	}
+      function refluxx()
+	{
+	presses++;
+	var refluxtemp = prompt("What temperature do you need your reflux to be?");
+	var refluxtime = prompt("how long would you like to reflux?");
+	if (presses == 1) { 
+	document.querySelector("#sone").innerHTML = "reflux for " + refluxtime + " at " + refluxtemp}
+	if (presses == 2) { 
+	document.querySelector("#stwo").innerHTML = "reflux for " + refluxtime + " at " + refluxtemp}
+	if (presses == 3) { 
+	document.querySelector("#sthree").innerHTML = "reflux for " + refluxtime + " at " + refluxtemp}
+	if (presses == 4) { 
+	document.querySelector("#sfour").innerHTML = "reflux for " + refluxtime + " at " + refluxtemp}
+	if (presses == 5) { 
+	document.querySelector("#sfive").innerHTML = "reflux for " + refluxtime + " at " + refluxtemp}
+	if (presses == 6) { 
+	document.querySelector("#ssix").innerHTML = "reflux for " + refluxtime + " at " + refluxtemp}
+	}
+      function washx()
+	{
+	presses++;
+	var washcomponent = prompt("What would you like to wash with?");
+	if (presses == 1) { 
+	document.querySelector("#sone").innerHTML = "transfer to a separatory funnel and wash with " + washcomponent}
+	if (presses == 2) { 
+	document.querySelector("#stwo").innerHTML = "transfer to a separatory funnel and wash with " + washcomponent}
+	if (presses == 3) { 
+	document.querySelector("#sthree").innerHTML = "transfer to a separatory funnel and wash with " + washcomponent}
+	if (presses == 4) { 
+	document.querySelector("#sfour").innerHTML = "transfer to a separatory funnel and wash with " + washcomponent}
+	if (presses == 5) { 
+	document.querySelector("#sfive").innerHTML = "transfer to a separatory funnel and wash with " + washcomponent}
+	if (presses == 6) { 
+	document.querySelector("#ssix").innerHTML = "transfer to a separatory funnel and wash with " + washcomponent}
+	}
+      function dryx()
+	{
+	presses++;
+	if (presses == 1) { 
+	document.querySelector("#sone").innerHTML = "dry with MgSO4, wait 10 minutes, then filter"}
+	if (presses == 2) { 
+	document.querySelector("#stwo").innerHTML = "dry with MgSO4, wait 10 minutes, then filter"}
+	if (presses == 3) { 
+	document.querySelector("#sthree").innerHTML = "dry with MgSO4, wait 10 minutes, then filter"}
+	if (presses == 4) { 
+	document.querySelector("#sfour").innerHTML = "dry with MgSO4, wait 10 minutes, then filter"}
+	if (presses == 5) { 
+	document.querySelector("#sfive").innerHTML = "dry with MgSO4, wait 10 minutes, then filter"}
+	if (presses == 6) { 
+	document.querySelector("#ssix").innerHTML = "dry with MgSO4, wait 10 minutes, then filter"}
+	}
+      function nitrogen()
+	{
+	if(document.querySelector("#waterfree").checked)
+	  {document.querySelector("#nitro").innerHTML="Make sure to put everything under nitrogen!";}
+	else{document.querySelector("#nitro").innerHTML=" ";}
+	}
+
+    </script>
+	
+  </head>
+
+  <body>
+
+<input type="radio" name="note" id="show" onclick="showcn();">Show Creator's Note
+<input type="radio" name="note" id="hide" onclick="hidecn();">Hide Creator's Note
+<div id="cn">
+    <h3> Creator's Note </h3>
+Hello! <br>
+this entirely self-indulgent. <br>
+For my research lab, I have to pull procedures from papers that talk in dense jargon that can be very hard to follow, like this: <br>
+<image src="Procedure.jpg"><br>
+Because of that, I try to rewrite the procedure myself in a way that makes more sense, and goes step by step so I can follow along while I work. <br>
+This is very annoying to do, so I figured this would help me do it. 
+</div>
+<br><br>
+
+
+<h1> Procedure Builder </h1>
+<b>Components:</b><br>
+Please enter in the name, molar mass, and how many mmols you need for each component of your reaction. <br>
+Feel free to use this <a href="MMCalc.html">molar mass calculator</a> to find your molar masses. <br>
+If you don't know what molar mass is, please refer to <a href="MMWks.html">this guide</a>.<br> 
+The table will automatically fill in the calculated mass you need of each component. <br>
+Please leave the "actual mass" section blank for now, you will use it once you weigh out each component. <br> <br>
+
+<table border=1>
+<tr><td>Compound Name</td> <td>Molar Mass</td> <td>mmols</td> <td>Calculated mass</td> <td>Actual Mass</td></tr>
+<tr><td><input type="text" id="componename"></td> <td><input type="text" id="componemm"></td> <td><input type="text" id="componemols" onchange="massone();"></td> <td><input type="text" id="componecmass"></td> <td><input type="text" id="componeamass"></td></tr>
+<tr><td><input type="text" id="comptwoname"></td> <td><input type="text" id="comptwomm"></td> <td><input type="text" id="comptwomols" onchange="masstwo();"></td> <td><input type="text" id="comptwocmass"></td> <td><input type="text" id="comptwoamass"></td></tr>
+<tr><td><input type="text" id="compthreename"></td> <td><input type="text" id="compthreemm"></td> <td><input type="text" id="compthreemols" onchange="massthree();"></td> <td><input type="text" id="compthreecmass"></td> <td><input type="text" id="compthreeamass"></td></tr>
+<tr><td><input type="text" id="compfourname"></td> <td><input type="text" id="compfourmm"></td> <td><input type="text" id="compfourmols" onchange="massfour();"></td> <td><input type="text" id="compfourcmass"></td> <td><input type="text" id="compfouramass"></td></tr>
+<tr><td><input type="text" id="compfivename"></td> <td><input type="text" id="compfivemm"></td> <td><input type="text" id="compfivemols" onchange="massfive();"></td> <td><input type="text" id="compfivecmass"></td> <td><input type="text" id="compfiveamass"></td></tr>
+</table>
+<input type="reset" value="clear">
+<br><br>
+
+<b>Instructions</b><br>
+For each step you want to add, press the associated button. You will be prompted with certain questions depending on what button you press. <br>
+For example, if the first step of your procedure is to add ethanol to an erlenmeyer flask, press "add component". <br>
+You will be asked what you would like to add (ethanol) and what you would like to add it to (an erlenmeyer flask). <br>
+Once you've entered that in, The first step under "procedure" will change to "1. add ethanol to erlenmeyer flask" <br>
+Continue doing this for all of the steps of your procedure. There are buttons for adding a component, stirring, refluxing, washing, and drying. <br>
+Finally, some reactions need to be done in a completely water-free environment, so they can't be exposed to air (or water vapor will get in). <br>
+If this is the case, check the box at the bottom labelled "This reaction needs to be water/air-free".<br>
+This will add a reminder to do everything under a nitrogen atmosphere at the top of your procedure. <br><br>
+
+
+<h3>Procedure</h3>
+<input type="button" id="add" value="add component" onclick="addcomponent();"> 
+<input type="button" id="stir" value="stir" onclick="stirx();"> 
+<input type="button" id="reflux" value="reflux" onclick="refluxx();"> 
+<input type="button" id="wash" value="wash" onclick="washx();"> 
+<input type="button" id="dry" value="dry" onclick="dryx();"> <br><br>
+
+<div id=nitro> </div>
+<ol>
+<li><div id = sone> </div></li>
+<li><div id ="stwo"> </div></li>
+<li><div id ="sthree"> </div></li>
+<li><div id ="sfour"> </div></li>
+<li><div id ="sfive"> </div></li>
+<li><div id ="ssix"> </div></li>
+<input type=checkbox id=waterfree onclick="nitrogen();"> This reaction needs to be water/air-free.
+  </body>
+ </form>
+</html>

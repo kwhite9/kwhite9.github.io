@@ -1,10 +1,56 @@
 <html>
   <head>
     <title>MMwks</title>
-    <script>
-      function watermm()
+<link href="https://fonts.cdnfonts.com/css/chalk" rel="stylesheet">
+    <style>
+      body
 	{
-	if(document.querySelector("#water").value=="18")
+	text-align: center;
+	Color: white;
+	font-family: 'Chalk', sans-serif;
+                                                
+ 	background-image: url('Chalkboard.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:99.5% 100%;
+	}
+      table
+	{
+	margin-left: auto;
+	margin-right: auto;
+	}
+      ul
+	{
+	display: table;
+	margin: 0 auto;
+	text-align: left;
+	}
+      a
+	{
+	color: #c0fafc;
+	}
+    </style>
+
+    <script>
+      function boxcheck()
+	{
+	if (document.querySelector("#molarmass").checked &&
+	 document.querySelector("#molecularmass").checked){
+	alert("Correct!");}
+	else {alert("Almost! The sum of the atomic masses within a molecule is actually both the molar and the molecular mass.");}
+	}
+      function radiocheck()
+	{
+	if(document.querySelector("#seventeen").checked){
+	alert("Almost! However, since water has two hydrogens, you have to multiply the atomic mass of hydrogen by two before you add it.");}
+	else if(document.querySelector("#eighteen").checked){
+	alert("Nice job!");}
+	else if(document.querySelector("#nineteen").checked){
+	alert("Not quite! Try looking back over your math and try again.");}
+	}
+      function saltmm()
+	{
+	if(document.querySelector("#salt").value=="58")
 	  {
 	  alert("good job! Try the next one.");
 	  }
@@ -42,7 +88,7 @@
   <body>
     <form>
     <h1>Introduction to Molar Mass</h1>
-Welcome! <br><br>
+<h2>Welcome! </h2>
 Today we will be learning about <b>molar mass!</b> <br>
 Molar mass is an important concept that chemists and chemistry students use every day. <br>
 When looking at a reaction, you need to know how many molecules (roughly) of each reactant you need, so that you know how much of each material you need to add to your reaction. <br>
@@ -74,15 +120,39 @@ Because of this, the amount of atomic mass units per molecule of a substance is 
 
 So, back to our earlier example, ethane's <b>molecular</b> mass is 30 atomic mass units per molecule, and it's <b>molar</b> mass is 30 grams per mole! <br><br>
 
+<h2>Check</h2>
+If the sum of the masses of atoms in a molecule adds up to 50, that would be the molecule's:<br>
+<input type="checkbox" value="molarmass" id="molarmass"> Molar Mass<br>
+<input type="checkbox" value="molecularmass" id="molecularmass"> Molecular Mass<br>
+<input type = "button" value="check" onclick="boxcheck();"> <br><br>
+
+What is the molar mass of water if the atomic mass of oxygen (O) is 16 and the atomic mass of hydrogen (H) is 1? <br>
+<input type="radio" name="water" value="17" id="seventeen">17
+<input type="radio" name="water" value="18" id="eighteen">18
+<input type="radio" name="water" value="19" id="nineteen">19 <br>
+<input type = "button" value="check" onclick="radiocheck();">
+
+
 <h2>Now It's Your Turn!</h2>
 Now that we've done an example together, it's your turn to try a couple! <br>
-Use the periodic table provided below to help you. The molecular/molar mass of each element is listed directly below it. <br>
-<b><u>insert periodic table here!!!!!!!</b></u> <br> <br>
-What is the molar mass of water (H2O) to the nearest whole number? <input type="text" name="water" id="water"><input type=button value="check" onclick="watermm();"><br>
-What is the molar mass of acetic acid (C2H4O2) to the nearest whole number? <input type="text" name="vinegar" id="vinegar"><input type=button value="check" onclick="vinegarmm();"><br>
-What is the molar mass of quartz (SiO2) to the nearest whole number? <input type="text" name="quartz" id="quartz"><input type=button value="check" onclick="quartzmm();"><br><br>
-<div id="calc"> </div>
+Use the periodic table provided below to help you. The molecular/molar mass of each element is listed directly below it. <br><br>
+<image src="Periodictable.png" alt="Periodic Table"> <br> <br>
 
+<table>
+<tr><td>What is the molar mass of salt (NaCl) to the nearest whole number?</td><td><input type="text" name="salt" id="salt"><input type=button value="check" onclick="saltmm();"></td></tr>
+<tr><td>What is the molar mass of acetic acid (C2H4O2) to the nearest whole number?   </td><td><input type="text" name="vinegar" id="vinegar"><input type=button value="check" onclick="vinegarmm();"></td></tr>
+<tr><td>What is the molar mass of quartz (SiO2) to the nearest whole number?</td><td><input type="text" name="quartz" id="quartz"><input type=button value="check" onclick="quartzmm();"></td></tr><br><br>
+</table>
+<input type="reset" value="clear"><br><br>
+Molar mass can be tedious, right? Well, now that you know what it is and how to find it, I can show you the <a href=MMCalc.html>molar mass calculator.</a><br>
+Additionally, if you would like something to help you build procedures for lab, check out the <a href="proc.html">procedure builder instead. </a><br> 
+
+If you'd like to learn more about molar mass, please check out these helpful pages:
+<ul>
+<li><a href="https://conquerchemistry.com/2017/07/26/calculate-molar-mass/"> Conquer Chemistry </a></li>
+<li><a href="https://study.com/learn/lesson/what-is-molar-mass-calculation-formula.html"> Study.com </a> </li>
+<li><a href="https://sciencing.com/calculate-molar-mass-4505969.html"> Sciencing.com </a> </li>
+</ul>
     </form>
   </body>
 </html>
